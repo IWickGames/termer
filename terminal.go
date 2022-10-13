@@ -29,6 +29,7 @@ func Offset(amount int, text string) {
 
 	if !multiline {
 		fmt.Println(strings.Repeat(" ", amount) + text)
+		return
 	}
 
 	for _, v := range strings.Split(text, "\n") {
